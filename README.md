@@ -1,4 +1,4 @@
-# Getting and cleaning data project description
+# Getting and cleaning data - project description
 ## Context
 This file is part of the project for Coursera Course "Getting and Cleaning Data" 
 ## Purpose
