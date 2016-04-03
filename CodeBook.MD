@@ -1,5 +1,5 @@
-#Dataset
-##Origin
+#Codebook
+##Origin of dataset
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset - Version 1.0
 ==================================================================
@@ -16,8 +16,16 @@ Using its embedded accelerometer and gyroscope, we captured 3-axial linear accel
 The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
-See 'features_info.txt' for more details. 
+For more information about this dataset contact: activityrecognition@smartlab.ws
 
+## License
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
+##Organisation of dataset
+###Information per record
 For each record the following data were provided:
 (1) Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 (2) Triaxial Angular velocity from the gyroscope. 
@@ -25,8 +33,8 @@ For each record the following data were provided:
 (4) Its activity label. 
 (5) An identifier of the subject who carried out the experiment.
 
+###Files included in initial dataset (zipped).
 The dataset includes the following files:
-=========================================
 - A file describing the data set: 'README.txt'
 - Two files listing and describing the 561 features - see (1): 'features.txt' and 'features_info.txt' respecively
 - A file that links the activity numbers to their labels: 'activity_labels.txt'
@@ -38,15 +46,7 @@ The files included under in folders './train/Inertial Signals/' and './test/Iner
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-For more information about this dataset contact: activityrecognition@smartlab.ws
-
-## License
-Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
-This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
-Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
-
-# Codes
+# Codes in the resulting dataset tidy.csv
 There are 6 activities in element "actvity" with the following values:
 1 WALKING
 2 WALKING_UPSTAIRS
