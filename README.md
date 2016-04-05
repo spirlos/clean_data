@@ -34,14 +34,14 @@ I created the script "run_analysis.R" which does the following:
 The following files have been included in this repo: 
 1) the script "run_analysis.R" 
 2) a code book "CodeBook.wd" that describes the variables, the data, and 
-3) the tidy data set "tidy.csv" produced by the script as indicated below, 
+3) the tidy data set "tidy.txt" produced by the script as indicated below, 
 4) the present "README.wd" file
 
 #Packages required
-The only extra package that is used is data.table. This is attached by the first command. If it is not installed then it shoudl be installed. 
+The only extra package that is used is data.table. This is attached by the first command. If it is not installed then it should be installed. 
 
 ##Note 1
-At the end of the processing a message is printed iformign the user
+At the end of the processing a message is printed informing the user.
 ##Note 2
 At the end the global environment is cleaned.  
 
