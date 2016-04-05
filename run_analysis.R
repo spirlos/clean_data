@@ -103,6 +103,6 @@ names(alldata)<-gsub("-bandsEnergy()","EnergyOfFrequencyInterval.",names(alldata
 # for each activity and each subject.
 DT<-data.table(alldata)
 tidy<-DT[,lapply(.SD,mean),by="activity,subjectID"]
-write.csv(tidy,"tidy.csv")
-print ("Processing completed. The file tidy.csv is on in your working directory, in folder /UCI HAR Dataset.")
+write.table(tidy, file="tidy.txt", row.name=FALSE, col.names=TRUE)
+print ("Processing completed. The file tidy.txt is on in your working directory, in folder /UCI HAR Dataset.")
 rm(list=ls())
